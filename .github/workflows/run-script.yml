@@ -25,8 +25,8 @@ jobs:
 
     - name: Run the script
       env:
-        GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        DOWNLOAD_PATH: ${{ secrets.DOWNLOAD_PATH }}
+        GITHUB_USERNAME: ${{ secrets.MY_USERNAME }}
+        GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
+        DOWNLOAD_PATH: ${{ secrets.MY_DOWNLOAD_PATH }}
       run: |
         python main.py
